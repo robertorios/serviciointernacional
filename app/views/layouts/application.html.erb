@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Serviciointernacional1</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+			<div id="logo">
+				<%=image_tag("logo.png", alt: "Example Image")%>
+				<!-- <a href="index.html"><img src="logo.jpg" alt="" /></a>		 -->
+			</div>		
+			<ul>
+				<!-- <li class="selected"><a href="index.html"><span>homp</span></a></li> -->
+				<li <% if current_page?(translations_path) -%>class="selected"<% end -%>>
+  					<%= link_to 'Translations', translations_path %>
+				</li>
+				<li <% if current_page?(staff_path) -%>class="selected"<% end -%>>
+  					<%= link_to 'Staff', staff_path %>
+				</li>
+				<li <% if current_page?(services_path) -%>class="selected"<% end -%>>
+  					<%= link_to 'Services', services_path %>
+				</li>
+				<li <% if current_page?(events_path) -%>class="selected"<% end -%>>
+  					<%= link_to 'Events', events_path %>
+				</li>
+				<li <% if current_page?(home_path) -%>class="selected"<% end -%>>
+  					<%= link_to 'Home', home_path %>
+				</li>														
+			</ul>
+	</div>
+<%= yield %>
+
+</body>
+</html>

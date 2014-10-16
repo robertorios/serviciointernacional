@@ -1,144 +1,138 @@
-<div id = "body">
-<div class="header">
-
-<div id="myCarousel" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="item active">
-      <%=image_tag("flags.jpg", alt: "Example Image")%>
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>CAPTION FOO BAR</h1>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <img src="htpp://someimagepath.com" alt="foo">
-    </div>
-    
-  </div>
-</div><!-- /.carousel -->
-
-
-
-
-
-<!-- 			<div>
-				
-				<%=image_tag("sisepuede.png", alt: "Example Image")%>
-			</div> -->
-		</div>
-		<div class="body">
-			<div class="section">
-				<a href="services.html">
-				<!-- <img src="images/gears.jpg" alt="" />				 -->
-				<%=image_tag("gears.jpg", alt: "Example Image")%>
-				services
-				</a>			
-			</div>	
-			<div class="article">
-				<!-- <img src="images/graph2.jpg" alt="" /> -->
-				<%=image_tag("graph2.jpg", alt: "Example Image")%>		
-				<h4>prototipo para servicio internacional, data acerca de home y informes</a></h4>	
-				<p>mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos </p>
+<div id="body">
+	<div class="gradientebackground">
+	    <div class="mainbody">
+		  	<div class="header">
+				<div class="container" id="carousel" style = "border:solid 1px red">
+		    		<div id="myCarousel" class="carousel slide carousel-fade">
+			    		<ol class="carousel-indicators">
+			        		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			        		<li data-target="#myCarousel" data-slide-to="1"></li>
+			        		<li data-target="#myCarousel" data-slide-to="2"></li>
+			    		</ol>
+			    		<div class="carousel-inner">
+			        		<div class="active item"><%= image_tag 'Chisenora.png' %><div class="carousel-caption"><p>Caption text here</p></div></div>
+				        	<div class="item"><%= image_tag 'flags2.jpg' %><div class="carousel-caption"><p>Caption text here</p></div></div>
+				        	<div class="item"><%= image_tag 'gears.jpg' %><div class="carousel-caption"><p>Caption text here</p></div></div>
+			    		</div>
+			    		<a class="carousel-control left" href="#myCarousel" data-slide="prev" >&lsaquo;</a>
+			    		<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		    		</div>
+				</div>
 			</div>
-			<div class="section">
-				<!-- <a href="about.html"><img src="images/globe.jpg" alt="" />about</a>			 -->
-				<%=image_tag("globe.jpg", alt: "Example Image")%>
-			</div>		
-		</div>
-		<div class="footer">
-			<div class="section">
-				<h3><a href="blog.html">blog</a></h3>	
-				<ul>
-					<li>
-						<p>Vestibulum tristique, dui a vestibulum blandit</p>	
-						<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>		
-					</li>		
-					<li>
-						<p>by <a href="http://www.freewebsitetemplates.com/">Vestibulum tristique, dui a vestibulum </a> Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam</p>
-						<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>				
-					</li>	
-					<li>
-						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>				
-						<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>
-					</li>		
-				</ul>	
+			<div class="body">
+
+					<div class="section">
+						<a href="services.html">
+							<!-- <img src="images/gears.jpg" alt="" />				 -->
+							<%=image_tag("gears.jpg", alt: "Example Image")%>
+							services
+						</a>			
+					</div>	
+					<div class="article">
+							<!-- <img src="images/graph2.jpg" alt="" /> -->
+						<%=image_tag("graph2.jpg", alt: "Example Image")%>		
+						<h4>prototipo para servicio internacional, data acerca de home y informes</a></h4>	
+						<p>mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos mas datos, datos </p>
+					</div>
+					<div class="section">
+						<!-- <a href="about.html"><img src="images/globe.jpg" alt="" />about</a>			 -->
+						<%=image_tag("globe.jpg", alt: "Example Image")%>
+					</div>
+						
 			</div>
-		<div class="featured">
-			<ul>
-				<li>
-					<h3>Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam. Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam</a>.</h3>		
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu augue vel dui cursus porta. Nulla sit amet tellus urna</p>		
-					<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>
-				</li>		
-				<li>
-					<h3>Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam</h3>
-					<img src="images/discussing.jpg" alt="" />
-					<p>Morbi non leo augue, et hendrerit lectus. Pellentesque ultricies sapien ornare ipsum tempor lobortis ullamcorper urna</p>
-					<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>
-				</li>	
-			</ul>		
-		</div>
-		<div class="section">
-			<h3>suspendisse aliquam</h3>	
-			<ul class="news">
-				<li>
-					<p>Vestibulum tristique</p>			
-				</li>		
-				<li>
-					<p>hendrerit lectus. Pellentesque ultricies</p>				
-				</li>	
-				<li>
-					<p>Pellentesque ultricies sapien ornare ipsum tempor lobortis ullamcorper urna</p>							
-				</li>		
-				<li>
-					<p>lorem ipsum dolor sit amet</p>
-				</li>
-				<li>
-					<p>consectetur adipiscing nunc eu augue vel dui cursus</p>				
-				</li>
-			</ul>	
-		</div>
-		</div>
-	</div>
-	<div id="footer">
-		<div>
+			<div class="footer">
+				<div class="section">
+					<h3><a href="blog.html">blog</a></h3>	
+					<ul>
+						<li>
+							<p>Vestibulum tristique, dui a vestibulum blandit</p>	
+							<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>		
+						</li>		
+						<li>
+							<p>by <a href="http://www.freewebsitetemplates.com/">Vestibulum tristique, dui a vestibulum </a> Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam</p>
+							<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>				
+						</li>	
+						<li>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>				
+							<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>
+						</li>		
+					</ul>	
+				</div>
+				<div class="featured">
+					<ul>
+						<li>
+							<h3>Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam. Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam</a>.</h3>		
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu augue vel dui cursus porta. Nulla sit amet tellus urna</p>		
+							<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>
+						</li>		
+						<li>
+							<h3>Vestibulum tristique, dui a vestibulum blandit, mi elit laoreet nulla consequat nec quam</h3>
+							<img src="images/discussing.jpg" alt="" />
+							<p>Morbi non leo augue, et hendrerit lectus. Pellentesque ultricies sapien ornare ipsum tempor lobortis ullamcorper urna</p>
+							<span>Sept 21, by Nullam | 99 Views | 69 Comments</span>
+						</li>	
+					</ul>		
+				</div>
+				<div class="section">
+					<h3>suspendisse aliquam</h3>	
+					<ul class="news">
+						<li>
+							<p>Vestibulum tristique</p>			
+						</li>		
+						<li>
+							<p>hendrerit lectus. Pellentesque ultricies</p>				
+						</li>	
+						<li>
+							<p>Pellentesque ultricies sapien ornare ipsum tempor lobortis ullamcorper urna</p>							
+						</li>		
+						<li>
+							<p>lorem ipsum dolor sit amet</p>
+						</li>
+						<li>
+							<p>consectetur adipiscing nunc eu augue vel dui cursus</p>				
+						</li>
+					</ul>	
+				</div>
+			</div>
+			<div id="footer">
+				<div>
+					<h3>america</h3>
+					<ul>
+						<li>457-380-1654 main</li>				
+						<li>257-301-9417 toll free</li>
+					</ul>			
+				</div>		
+				<div>
+					<h3>europe</h3>
+					<ul>
+						<li>457-380-1654 main</li>				
+						<li>257-301-9417 toll free</li>
+					</ul>			
+				</div>	
+				<div>
+					<h3>canada</h3>
+					<ul>
+						<li>457-380-1654 main</li>				
+						<li>257-301-9417 toll free</li>
+					</ul>			
+				</div>	
+				<div>
+					<h3>middle east</h3>
+					<ul>
+						<li>457-380-1654 main</li>				
+						<li>257-301-9417 toll free</li>
+					</ul>			
+				</div>	
+				<div>
+					<h3>follow us:</h3>
+					<a class="facebook" href="http://facebook.com/freewebsitetemplates" target="_blank">facebook</a>		
+					<a class="twitter" href="http://twitter.com/fwtemplates" target="_blank">twitter</a>
+				</div>	
+			</div>
 			<div>
-				<h3>america</h3>
-				<ul>
-					<li>457-380-1654 main</li>				
-					<li>257-301-9417 toll free</li>
-				</ul>			
-			</div>		
-			<div>
-				<h3>europe</h3>
-				<ul>
-					<li>457-380-1654 main</li>				
-					<li>257-301-9417 toll free</li>
-				</ul>			
-			</div>	
-			<div>
-				<h3>canada</h3>
-				<ul>
-					<li>457-380-1654 main</li>				
-					<li>257-301-9417 toll free</li>
-				</ul>			
-			</div>	
-			<div>
-				<h3>middle east</h3>
-				<ul>
-					<li>457-380-1654 main</li>				
-					<li>257-301-9417 toll free</li>
-				</ul>			
-			</div>	
-			<div>
-				<h3>follow us:</h3>
-				<a class="facebook" href="http://facebook.com/freewebsitetemplates" target="_blank">facebook</a>		
-				<a class="twitter" href="http://twitter.com/fwtemplates" target="_blank">twitter</a>
-			</div>	
-		</div>
-		<div>
-			<p>&copy Copyright 2012. All rights reserved</p>
+				<p>&copy Copyright 2012. All rights reserved</p>
+			</div>
 		</div>
 	</div>
 </div>
+

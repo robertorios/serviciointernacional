@@ -19,13 +19,31 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin:0;
 	padding: 0;	
-	background-color: #5493F5;
+	background-color: #2762A6;
 }
+.mainbody
+{
+	background-color: white;
+	margin:0 auto;
+	width: 980px;
+	border: solid 5px #94c3f9;
+	border-radius: 20px;
+	padding: 10px;
+	}
+
+.gradientebackground
+{
+background: -webkit-linear-gradient(#2762A6, #5493F5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#2762A6, #5493F5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#2762A6, #5493F5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#2762A6, #5493F5); /* Standard syntax */">    
+}
+
 #header {
 	margin:0 auto;
 	padding: 0;	
 	overflow: hidden;
-	width: 960px;
+	width: 990px;
 }
 #header #logo {
 	float: left;
@@ -38,9 +56,9 @@ body {
 #header ul {
 	float: right;
 	margin: 10;
-	padding: 70px 0 0 0;
+	padding: 90px 0 0 0;
 	overflow: hidden;	
-	width: 605px;
+	width: 550px;
 }
 #header ul li {
 	list-style-type: none;
@@ -94,110 +112,6 @@ body {
 	background-position: -70px -74px; 
 } 
 
-#body {
-	background: url(images/bg-content.gif) repeat-x top left;
-	margin: 0;
-	padding: 0;	
-	min-width: 960px;
-}
-#body .header {
-	background: url(images/bg-body.gif) repeat-x bottom center;	
-	margin: 0 0 30px 0;
-}
-#body .header div {
-	background: url(images/smiling-man.jpg) no-repeat bottom right;
-	height: 340px;
-	margin: 0 auto;
-	padding: 0;
-	width: 960px;	
-}
-#body .header div div {
-	background: none;	
-	margin: 0;
-	padding: 0 0 0 13px;
-	height: 200px;
-	width: 490px;
-}
-#body .header div h3 {
-	color: #2a4f5e;	
-	font-size: 20px;
-	line-height: 30px;
-	margin: 18px 0 0 0;
-	padding: 0;
-	text-shadow: 1px 1px 1px #fff;
-}
-#body .header div h3 span {
-	display: block;	
-	font-size: 25px;
-}
-#body .header div h3 a {
-	color: #2a4f5e;
-	text-decoration: none;	
-}
-#body .header div h3 a:hover {
-	color: #507685;	
-}
-#body .header div p {
-	color: #507685;
-	font-size: 14px;
-	line-height: 24px;
-	margin: 12px 0 6px 0;
-	padding: 0;	
-	text-shadow: 1px 1px 1px #fff;
-}
-#body .header div p a {
-	color: #507685;	
-}
-#body .header div p a:hover {
-	color: #2a4f5e;	
-}
-#body .header ul {
-	overflow: hidden;
-	margin: 0;
-	padding: 49px 0 0;
-}
-#body .header ul li {
-	float: left;	
-	list-style: none;
-	padding: 0 5px;
-}
-#body .body {
-	border: 1px solid #e0e0e0;
-	margin: 0 auto 34px auto;
-	overflow: hidden;
-	padding: 0 2px;
-	width: 954px;
-}	
-#body .body div {
-	float: left;	
-}
-#body .body .section {
-	background: url(images/bg-section.gif) repeat-x top left;
-	height: 193px;
-	margin: 0;
-	padding: 35px 0 0 40px;
-	width: 186px;	
-}
-#body .body .section img {
-	display: block;
-}
-#body .body .section a {
-	color: #2a4f5e;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: 145px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 145px;
-}	
-#body .body .section a:hover {
-	color: #507685;	
-}
-#body .body .section img {
-	border: 0;	
-}
 #body .body .article {
 	background: url(images/bg-article.gif) no-repeat top center;
 	overflow: hidden;
@@ -612,6 +526,8 @@ body {
 #body .blog div p.article {
 	font-weight: bold;	
 }
+
+
 #footer {
 	background: #f5f5f5 url(images/bg-footer.gif) repeat-x top left;	
 	margin: 0;
@@ -679,3 +595,11 @@ body {
 	text-align: center;	
 	text-shadow: 1px 1px 1px #fff;
 }
+
+.main{
+	background: url(images/border-dashed.gif) repeat-x bottom left;
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+

@@ -50,7 +50,7 @@ header,
 hgroup,
 nav,
 section {
-  display: block;
+
 }
 
 audio,
@@ -221,7 +221,7 @@ textarea {
   }
 }
 
-body {
+ {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -6055,7 +6055,7 @@ a.badge:focus {
   filter: alpha(opacity=50);
 }
 
-.carousel-control.right {
+.carousel-control.right1 {
   right: 15px;
   left: auto;
 }

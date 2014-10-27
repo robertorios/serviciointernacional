@@ -1,4 +1,4 @@
-class EventsController < ApplicationController
+class EventosController < ApplicationController
 	def index
 	end
 
@@ -11,7 +11,7 @@ class EventsController < ApplicationController
 	end
 
 	def show
-		brinding.pry
+		# brinding.pry
 	end
 
 
@@ -24,4 +24,5 @@ class EventsController < ApplicationController
 	def update
 		binding.pry
 	end
+
 end

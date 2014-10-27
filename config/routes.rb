@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+    namespace :mercury do
+      resources :images
+    end
+  mount Mercury::Engine => '/'
+  Mercury::Engine.routes
+  
+  resources :events do
+    member { post :mercury_update}
+  end
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -7,8 +17,10 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-  get 'events' => 'events#events', :as => :events
-  get 'contacs' => 'contacs#contacs', :as => :contatcs
+  get 'events' => 'events#show', :as => :show_events
+  get 'eventos' => 'eventos#index', :as => :eventos
+  # get 'contacts' => 'contacts#index', :as => :contacts
+  get 'contactus' => 'contactus#contactus_index', :as => :contactus
   get 'services' => 'services#services', :as => :services
   get 'staff' => 'staff#staff', :as => :staff
   get 'home' => 'home#index', :as => :home

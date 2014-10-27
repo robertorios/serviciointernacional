@@ -31,6 +31,11 @@ gem 'mysql2'
 gem 'rspec-rails'
 
 gem 'devise'
+
+gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git', :branch => 'master'
+
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+# gem 'mercury-rails', git: 'https://github.com/jejacks0n/mercury.get', ref: 'a2b16bcdc9'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -43,3 +48,11 @@ gem 'devise'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+
+
+
+
+
+# gem 'mercury-rails', git: 'https://github.com/jejacks0n/mercury.get', ref: 'a2b16bcdc9'
+# gem 'paperclip'

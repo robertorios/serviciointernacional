@@ -1,28 +1,20 @@
+require 'pry'
 class EventosController < ApplicationController
 	def index
-	end
-
-	def new
+		@eventos = Evento.all
 		binding.pry
 	end
 
-	def create
-		binding.pry
-	end
-
-	def show
-		# brinding.pry
-	end
+	# def show
+	# 	binding.pry
+	# 	@evento = Evento.find(params[:id])
+	# end
 
 
 	def mercury_update
-		event = Page.
+		binding.pry
+		evento = Evento.find(params[:id])
+		# ...
 		render text: ""
-		binding.pry
 	end
-
-	def update
-		binding.pry
-	end
-
 end

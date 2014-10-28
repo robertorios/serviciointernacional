@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141026045439) do
+ActiveRecord::Schema.define(version: 20141027224130) do
+
+  create_table "eventos", force: true do |t|
+    t.string "name"
+    t.string "label"
+    t.text   "value"
+  end
 
   create_table "mercury_images", force: true do |t|
     t.string   "image_file_name"

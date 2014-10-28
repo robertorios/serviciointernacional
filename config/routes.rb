@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
+  mount Mercury::Engine => '/'
+  Mercury::Engine.routes
     namespace :mercury do
       resources :images
     end
-  mount Mercury::Engine => '/'
-  Mercury::Engine.routes
+  # mount Mercury::Engine => '/'
+  # Mercury::Engine.routes
   
-  resources :events do
-    member { post :mercury_update}
+  resources :eventos do
+    # get 'eventos' => 'eventos#index', :as => :eventos
+    member { post :mercury_update }
+    
   end
 
   devise_for :users
@@ -17,8 +21,8 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-  get 'events' => 'events#show', :as => :show_events
-  get 'eventos' => 'eventos#index', :as => :eventos
+  get 'eventos' => 'eventos#index', :as => :show_eventos
+  # get 'eventos' => 'eventos#index', :as => :eventos
   # get 'contacts' => 'contacts#index', :as => :contacts
   get 'contactus' => 'contactus#contactus_index', :as => :contactus
   get 'services' => 'services#services', :as => :services

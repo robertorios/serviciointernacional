@@ -1,0 +1,32 @@
+    <div class="mainbody">
+	  	<div class="header">
+
+
+<%= form_for @contact, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  nombre <%= f.text_field :name %>
+  email <%= f.text_field :email %>
+  phone number <%= f.text_field :phone %>
+  questions: <%= f.text_area :value, size: "60x12" %>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+	  	</div>
+	  	<div class="FooterSI">
+				<div style="float:left">
+					<p>&copy Copyright 2014. All rights reserved</p>
+				</div>
+				<div style="float:right;">
+                    <div style="float:left; padding-right:15px;color: #2a4f5e;">
+                    	<%=image_tag("twitter.png", alt: "Example Image")%>
+                    </div>
+                    <div style="float:left">
+                    	<%=link_to image_tag("Facebook.png", :alt => "Facebook"), "https://www.facebook.com/pages/SERVICIO-INTERNACIONAL/165952297926", :target => "_blank"%>
+                    </div>
+					          <div style="clear:both;"></div>
+				</div>
+				<div style="clear:both;"></div>
+				
+				
+		  </div>
+	</div>

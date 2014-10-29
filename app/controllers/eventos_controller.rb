@@ -2,7 +2,6 @@ require 'pry'
 class EventosController < ApplicationController
 	def index
 		@eventos = Evento.all
-		binding.pry
 	end
 
 	# def show

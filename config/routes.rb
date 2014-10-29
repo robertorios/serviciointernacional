@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     member { post :mercury_update }
     
   end
+  resources :contactus
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
@@ -24,7 +25,7 @@ Rails.application.routes.draw do
   get 'eventos' => 'eventos#index', :as => :show_eventos
   # get 'eventos' => 'eventos#index', :as => :eventos
   # get 'contacts' => 'contacts#index', :as => :contacts
-  get 'contactus' => 'contactus#contactus_index', :as => :contactus
+  # get 'contactus' => 'contactus#new', :as => :contactus
   get 'services' => 'services#services', :as => :services
   get 'staff' => 'staff#staff', :as => :staff
   get 'home' => 'home#index', :as => :home

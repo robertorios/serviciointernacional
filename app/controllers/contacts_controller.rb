@@ -1,6 +1,10 @@
 class ContactsController < ApplicationController
-def show
-hola
+def new
+ @contact = Contact.new
+end
+
+def create
+binding.pry
 end
 
 end

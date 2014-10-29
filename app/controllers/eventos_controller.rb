@@ -1,10 +1,14 @@
 require 'pry'
 class EventosController < ApplicationController
 	def index
-		@eventos = Evento.all
+		redirect_to action: 'show', id: 1
+				# params['id']="1"
+		# show
+		# @eventos = Evento.all
 	end
 
 	def show
+		binding.pry
 		@evento = Evento.find(params[:id])
 	end
 

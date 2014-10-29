@@ -2,23 +2,17 @@
 
 <html>
 <head>
-		<meta name="google-translate-customization" content="b2e75d76ba2b737e-a1b0701bada5880b-g22893e0bcf21fa58-19"></meta>
-
-  <title>Serviciointernacional1</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
+	<meta name="google-translate-customization" content="b2e75d76ba2b737e-a1b0701bada5880b-g22893e0bcf21fa58-19"></meta>
+    <title>Serviciointernacional1</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
 <body data-no-turbolink>
 <% if user_signed_in? %>
 	<p>Bienvenido <%= current_user.email%></p>
 	<p><%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %></p>
 <% end %>
-
-<!-- <p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p> -->
-
 <div id="body" style="z-index:22;">
 	<script type="text/javascript">
 		function googleTranslateElementInit() {
@@ -28,7 +22,6 @@
 	<div class="gradientebackground">		
 	<div id="main-menu">
 		<div id="logo" style='float:left'>
-			<!-- <a href="index.html"><img src="logo.jpg" alt="" /></a>		 -->
 		</div>	
 		<div id="NextoLogo" style="float:right">
 			<div style="padding-left:300px;" id="google_translate_element"></div>
@@ -49,13 +42,11 @@
 				<li <% if current_page?(contactus_path) -%>class="selected"<% end -%>>
 					<%= link_to 'Contact Us', contactus_path %>
 				</li>
-				 <!-- <li><a href="#">Contact Us</a></li> -->
 				</ul>
 		    </div>
 		</div>
 		<div style="clear:both;"> </div>
 	</div>
 <%= yield %>
-
 </body>
 </html>

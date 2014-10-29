@@ -9,9 +9,8 @@ def new
 end
 
 def create
-	binding.pry
 Contactu.salvar(params['contact'])
-binding.pry
+render "home/index"
 end
 
 

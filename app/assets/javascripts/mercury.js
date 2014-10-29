@@ -450,11 +450,11 @@ window.Mercury = {
   debug: false,
 
   onload: function() {
+;
     //Mercury.PageEditor.prototype.iframeSrc = function(url) { return '/testing'; }
     Mercury.on('ready', function() {
       var link = $('#mercury_iframe').contents().find('#edit_link');
-      alert(link);
-      Mercury.saveUrl = link.data('save-url');
+      Mercury.saveURL = link.data('save-url');
       link.hide();
     });
 
@@ -462,6 +462,5 @@ window.Mercury = {
       window.location.href = window.location.href.replace(/\/editor\//i, '/');
     });
   }
-
 
 };

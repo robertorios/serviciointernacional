@@ -10,7 +10,7 @@
   <%= csrf_meta_tags %>
 
 </head>
-<body>
+<body data-no-turbolink>
 <% if user_signed_in? %>
 	<p>Bienvenido <%= current_user.email%></p>
 	<p><%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %></p>

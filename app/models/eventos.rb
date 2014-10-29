@@ -1,7 +1,7 @@
 require 'pry'
 class Eventos < ActiveRecord::Base
 
-def self.content
+def content
 
 	binding.pry
 	@eventos.first.name

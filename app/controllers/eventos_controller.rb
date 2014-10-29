@@ -4,16 +4,14 @@ class EventosController < ApplicationController
 		@eventos = Evento.all
 	end
 
-	# def show
-	# 	binding.pry
-	# 	@evento = Evento.find(params[:id])
-	# end
+	def show
+		@evento = Evento.find(params[:id])
+	end
 
-
-	def mercury_update
-		binding.pry
+	def update
 		evento = Evento.find(params[:id])
-		# ...
+  		evento.value =	params[:content][:eventos_value][:value]
+  		evento.save!
 		render text: ""
 	end
 end

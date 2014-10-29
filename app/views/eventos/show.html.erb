@@ -1,9 +1,13 @@
+<% require 'pry'; binding.pry %>
+
 <div class="mainbody">
 	<div class="content">
-		<div id="evento_content" data-mercury="full">
-			<%= raw @eventos.content %>
+		<div id="eventos_value" data-mercury="full">
+			<%= raw @evento.value %>
 		</div>
-
+		<%=binding.pry%>
+		<%=if user_signed_in?%>
 		<p><%= link_to "Edit Page", "/editor" + request.path, id: "edit_link", data: {save_url: mercury_update_evento_path("@evento")} %></p>
+		<%=end%>
 	</div>
 </div>

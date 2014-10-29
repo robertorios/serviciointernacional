@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   end
   resources :contactus
 
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -22,7 +23,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # Example of regular route:
-  get 'eventos' => 'eventos#index', :as => :show_eventos
+  get 'eventos' => 'eventos#show', :as => :show_eventos
   # get 'eventos' => 'eventos#index', :as => :eventos
   # get 'contacts' => 'contacts#index', :as => :contacts
   # get 'contactus' => 'contactus#new', :as => :contactus

@@ -1,5 +1,5 @@
 class Mercury::Image < ActiveRecord::Base
-
+biding.pry
   self.table_name = :mercury_images
   
 

@@ -8,7 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 </head>
-<body data-no-turbolink>
+<body>
 <% if user_signed_in? %>
 	<p>Bienvenido <%= current_user.email%></p>
 	<p><%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %></p>

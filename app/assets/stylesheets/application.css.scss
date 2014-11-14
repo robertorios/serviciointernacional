@@ -21,6 +21,9 @@ body {
 	padding: 0;	
 	background-color: #1f5ca2;
 }
+
+@import 'bootstrap';
+
 .mainbody
 {
 	background-color: #E0E9F2;
@@ -29,14 +32,14 @@ body {
 	border: solid 5px #94c3f9;
 	border-radius: 20px;
 	padding-top: 20px;
-	}
+}
 
 .gradientebackground
 {
 background: -webkit-linear-gradient(#1f5ca2, #5493F5); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(#1f5ca2, #5493F5); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#1f5ca2, #5493F5); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1f5ca2, #5493F5); /* Standard syntax */">    
+  background: linear-gradient(#1f5ca2, #5493F5); /* Standard syntax */ 
 }
 
 #main-menu {
@@ -46,15 +49,13 @@ background: -webkit-linear-gradient(#1f5ca2, #5493F5); /* For Safari 5.1 to 6.0 
 	width: 990px;
 	background-image: url('ServicioInternacionalLogo.png');
 	background-repeat: no-repeat;
-	
-
 }
 
 #main-menu #NextoLogo {
-	
 	width: 355px;
 	padding-right: 170px;
 }
+
 #main-menu #logo {
 	
 }	
@@ -64,6 +65,7 @@ background: -webkit-linear-gradient(#1f5ca2, #5493F5); /* For Safari 5.1 to 6.0 
 	padding: 90px 20px 0 0;
 	overflow: hidden;	
 }
+
 #header ul li {
 	list-style-type: none;
 	float: right;	
@@ -743,7 +745,7 @@ border-top: 1px solid #6cd1b3;
   -moz-border-radius-bottomright: 10px;
 }
 #menu-bar:after {
-  content: ".";
+  content: '.';
   display: block;
   clear: both;
   visibility: hidden;

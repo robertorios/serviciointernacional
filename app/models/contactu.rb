@@ -1,6 +1,5 @@
 class Contactu < ActiveRecord::Base
 def self.salvar(data)
-binding.pry
 
  Pony.mail({
     :to => 'jeanarios@gmail.com',
@@ -15,7 +14,7 @@ binding.pry
       :domain               => "localhost.localdomain" # the HELO domain provided by the client to the server
     },
     :subject => 'hi',
-    :body => 'Comment received at ' + Time.to_s + ' by ' + data['name'] + ' with phone number / email : ' + data['email'] + ' / ' + data['phone'] + ' says: ' + data['value'] 
+    :body => 'Comment received at ' + Time.now.to_s + ' by ' + data['name'] + ' with phone number / email : ' + data['email'] + ' / ' + data['phone'] + ' says: ' + data['value'] 
   })
 
 end

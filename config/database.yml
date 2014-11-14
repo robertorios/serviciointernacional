@@ -9,14 +9,14 @@
 #   pool: 5
 #   timeout: 5000
 
-development:
+production:
  # <<: *default
   adapter: mysql2
   # encoding: utf8
   # database: db/serviciointernacional1_development
   # pool: 5
   username: root
-  password: 
+  password: pe1977ru
   # reconnect: false
   # host: 127.0.0.1
   host: localhost

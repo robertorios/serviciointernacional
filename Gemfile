@@ -39,6 +39,10 @@ gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem "pry"
 
 gem 'pony', '~> 1.11'
+
+gem 'geocoder'
+
+gem 'gmaps4rails'
 # gem 'mercury-rails', git: 'https://github.com/jejacks0n/mercury.get', ref: 'a2b16bcdc9'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

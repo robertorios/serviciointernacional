@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :gmaps
+
   mount Mercury::Engine => '/'
   Mercury::Engine.routes
     namespace :mercury do
@@ -13,6 +15,7 @@ Rails.application.routes.draw do
     
   end
   resources :contactus
+  resources :gmaps
 
 
   devise_for :users
@@ -24,9 +27,6 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   get 'eventos' => 'eventos#show', :as => :show_eventos
-  # get 'eventos' => 'eventos#index', :as => :eventos
-  # get 'contacts' => 'contacts#index', :as => :contacts
-  # get 'contactus' => 'contactus#new', :as => :contactus
   get 'services' => 'services#services', :as => :services
   get 'staff' => 'staff#staff', :as => :staff
   get 'home' => 'home#index', :as => :home

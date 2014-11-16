@@ -1,10 +1,10 @@
-class ContactsController < ApplicationController
-def new
- @contact = Contact.new
-end
+# class ContactsController < ApplicationController
+# def new
+#  @contact = Contact.new
+# end
 
-def create
-binding.pry
-end
+# def create
+# binding.pry
+# end
 
-end
+# end
